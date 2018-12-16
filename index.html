@@ -6,7 +6,7 @@
 		body{
 			margin: 40px auto;
 			max-width: 600px;  
-			color:green;
+			color:black;
 			    display: flex; /* opt into the new box model */ 
         justify-content: center; /* "align" */
         align-items: center; /* "valign" */
@@ -21,6 +21,8 @@
 </head>
 <body>
 	<div class="poto">
+		<button id="magenta">Click ici poto</button>
+		<button id="headlines">clickeuhhhh</button>
 <header>
 
     <h1>This is <i>still</i> a motherfucking website.</h1>
@@ -83,7 +85,40 @@ but they're also fucking ugly. You and all the other web designers out there nee
 <p>This page-that isn't a total fucking eyesor-was created by <a href="https://twitter.com/drew_mc">me</a> with help from <a href="https://twitter.com/gabehammersmith">him</a>.
 
 </p>
+
 </div>
+
+
+
+<script type="text/javascript">
+//	setTimeout(function(){
+//		if()
+//		alert('Hey le site xxxvidsxxx est trop bien. Viens dessus stp please')
+
+//	},10000)
+
+setTimeout(function(){if (confirm("'Hey le site xxxvidsxxx est trop bien. Viens dessus stp please'")) {
+	window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";}},10000)
+
+
+//document.getElementByID("magenta").addEventListener("click", function(){this.style.backgroundColor = "red"})
+const magenta= document.getElementById("magenta")
+magenta.addEventListener("click", function(){document.body.style.backgroundColor = "magenta";
+});
+
+
+var h1Elements = document.getElementsByTagName("h1");
+const headlines= document.getElementById('headlines')
+headlines.addEventListener("click" , function(){
+for(var i = 0; i < h1Elements.length; i++) {
+   h1Elements[i].style.color = "green";
+}
+	
+})
+
+	
+</script>
+
    
 
 </body>
